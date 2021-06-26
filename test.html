@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <form name="demo">
+        <label>
+            Mario
+            <input type="radio" value="mario" name="characters" checked>
+        </label>
+        <label>
+            Luigi
+            <input type="radio" value="luigi" name="characters">
+        </label>
+        <label>
+            Toad
+            <input type="radio" value="toad" name="characters">
+        </label>
+    </form>
+
+    <script>
+        const form = document.forms.demo;
+        const checked = form.querySelector('input[name=characters]:checked');
+
+        // log out the value from the :checked radio
+        console.log(checked.value);
+    </script>
+</body>
+
+</html>
